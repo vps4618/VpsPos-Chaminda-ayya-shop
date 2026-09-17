@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<vpsPos>
+  <sqlString>Data Source=Vps4618MainLap\SQLEXPRESS;Initial Catalog=dbAxia;Integrated Security=True</sqlString>
+  
+  <!--Change this for every other computer, if a store has two computers, put 'A' for first one and 'B' for second pc-->
+  <phrase>B</phrase>
+  
+  <!--Available users are Main and Sub
+  Main user print receipt with sinhala and
+  Sub user print receipt with english font - this can use when two pcs print with two lanuages, otherwise dont use , because changing language in app will change language in both computers,this will override it
+  -->
+  <user></user>
+  
+  <!--
+  enable w-sale features only for pradeep traders - pradeep
+  -->
+  <store></store>
+  
+  <!---This is feature for any store-->
+  <noOfErrors>300</noOfErrors>
+  
+  <!--For pradeep traders only - If this is 'yes', then small rpt file will use for print retail bills for pc 1 (which has phrase 'B') -->
+  <smallBillForPc1></smallBillForPc1>
+  
+</vpsPos>

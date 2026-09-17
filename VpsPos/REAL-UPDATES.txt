@@ -1,0 +1,217 @@
+﻿2023/01/09
+------------
+1.App started running on pradeep traders.
+
+updates
+********
+# showing a message that receipt saved
+# showing dialogs like printing please wait,loading please wait while database connection
+# printing receipt when enter key pressed on customer name text box
+# loading only current day bills from descending order when initializing bill form
+# showing cost price when short cut key pressed
+# changing colour of selection
+# note write function added
+# shortcuts message box created
+# sqlString and phrase getting from a xml file functionality created
+
+2023/01/11
+---------------
+updates
+*********
+# Main user print receipt with sinhala font
+# Sub user print report with english font
+# In BillForm when refresh  button click it updates according to searchTextBox
+# All system with two users in same folder by classifying them in xml file
+
+2023/01/12
+----------------
+updates
+********
+# when saving and updating items in inventory they are trimmed.
+
+# No loading dialog when searching item from barcode
+
+# බිලක් බිල් ෆෝම් එකෙන් ගන්නකොට ඒක උප්ඩේට් කරල බිල් ෆෝම් එක වහන්නේ නැතුව/රිෆ්‍රෙෂ් කරන්නේ නැතුව අයේත් ඒ බිලම ගත්තොත් totalPrice උප්ඩේට් වෙන්නේ නැති නිසා (billGridView එකෙන් ගන්න නිසා) බිලේ ඔක්කොම විස්තර ඩේටාබේස් එකෙන් ගන්න හදනවා.
+
+# tooltips removed
+
+# drop downs converted to drop down lists
+
+# changing positions of bill price text box and sale price text box
+
+# cashier eke barcode eken badu danakota one ilakkam ganaka barcode ekakin baduva enna haduva (kalin thibbe barcodeText_textChanged function eka ayin karala BarcodeText_keyDown function eka damma mokada barcode reader eken item ekak scan karama enter key eka automa obana nisa)
+
+# same barcode grid view eke enter key eken baduva ganna haduva
+
+# isFromBarcode eka ayin kala (kalin Enter key eka handle kale nathi nisa quantity eka nathuva sale price eka edit karanna apu nisa solution ekak vidiyata dapu eka)
+,Dan barcodeText_keyDown eken ENTER key press eka handle karana nisa
+
+2023/01/14
+-----------
+updates
+*******
+# inventory search updated.(no loading screen when barcode search,search result in barcode comes after enter key pressed)
+
+# In billsgridview when searchTextBox.Text is "" datasource is null.
+
+# In billform search with button functionality added
+
+# In inventory form search with button functionality added.
+
+# shortcut form and updates form created.They used to display shortcut and updates text files.
+
+# focus removeItem button in cashier form with DELETE key shortcut deleted.
+
+# Link labels deleted and menu created for them (shortcuts,updates)
+
+# Nothing happen if enter key press on empty Barcode text box.
+
+# shortcuts for notes in cashier form by ctrl + S deleted and ctrl + N added
+
+2023/01/26
+----------
+updates
+********
+# debt and customers windows with functionality created
+
+2023/01/27
+----------
+updates
+********
+# stock update functionality added
+
+2023/02/02 - 1.0.0.2
+----------
+updates
+********
+# forms' layout changed to tablelayout for responsive layout.
+# All print receipts fully changed to dynamic.
+
+2023/02/03 - 1.0.0.3
+----------
+updates
+********
+# Item info history form and functionality created.
+
+2023/02/09 - 1.0.0.4
+------------
+updates
+********
+# Language for print receipts added
+# Daily transactions functionality added
+
+2023/02/12
+-----------
+updates
+*******
+# samebarcode gridview font size increased.
+# two colours for forms with two sections
+# daily added records will popup in debt and daily transactions.
+# date search in debt form fixed.
+# debt search results for transactions comes with customer name.
+# name duplication prevented when updating an item.
+# message box icon added in inventory form.
+# tab index bug fixed in all forms.
+# in cashier form , customer name tab added.
+
+2023/04/12
+-----------
+updates
+*********
+# Error of deleting stock info when delete button press eventhough reference error occured fixed.
+# both language in database and user type in required info considered when printing a bill.but priority goes to user type in required info.
+
+2023/04/14
+-----------
+updates
+**********
+# Both sale price and bill price will show in same barocde grid view.
+# Deleting items without getting reference errors can be done now.
+# In inventory form Save,Update,Delete fuctions are made with transactions.So when an exception occurs query will rollback.
+# In customers form queries that transactions wanted made with it.
+# Debt form functions with sql queries now equipped with transactions.
+
+2023/09
+--------
+updates
+********
+# rounding off total of bills to not to get decimal points.
+
+2023/10/15
+----------
+updates
+*********
+# adding print and view buttons to bills grid view
+
+2023/12/16
+-----------
+updates
+********
+# quick save by pressing F12 added in cashier form.
+
+2024/01/09
+------------
+updates
+********
+# when a bill saved or printed , total amount,received amount,change amount will display in cashier form rich box.
+# In cashier grid view , a user can't resize columns or rows.
+
+2024/01/27
+------------
+updates
+********
+# A condition added to check length of characters in charge text box is lower than 8 (to prevent auto printing when barcode scanned there).
+
+2024/01/29
+------------
+updates
+********
+# shortcuts changed - F12 - quick save
+					  F11 - quick save with print
+
+# new shortcut added to close window(Ctrl+Shift+X)	
+
+2024/02/02
+------------
+updates
+********
+# when a bill viewed in bill window, it will close.
+
+2024/04/13
+------------
+updates
+********
+# Message rich text box added with features.
+# when ctrl+M press in chashierform selected row's cost and bill price changed to prevent profit difference.(use for not updated items)
+
+2024/04/21
+------------
+updates
+********
+# Disable readonly mode shortcut added of messagerichtextbox.
+# Close already opened cashier form when click view button in bill form added.
+
+
+2024/07/15
+------------
+updates
+********
+# receipts and receipts items datatables cleared.
+# stopped feching itemname from database to itemcombotextbox by feching once to mainform dt set.
+
+2024/07/16
+------------
+updates
+********
+# WHEN ctrl+M pressed in cashier form cost price will be saleprice-salprice*0.1
+
+2024/10/07(to be changed when moving to another computer)
+-------------
+updates
+********
+# w.s.r(wrong sale report) for different users created. (if this app bring for use in another computer, this setting should be changed.) . this setting established in sale report window (to find all settings search for keyword pradeep)
+# to view bill total,date,no of bills in bill form shortcut F6 created
+# items for F6 will dissapear after 5 minutes
+# in wsr last bill match for sale have last bill details of real sale
+# not showing items in bills form valid only if username not pradeep
+# saleshouldbe will be double if checkers check in between shop open time

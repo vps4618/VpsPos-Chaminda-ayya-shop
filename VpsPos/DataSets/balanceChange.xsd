@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="balanceChange" targetNamespace="http://tempuri.org/balanceChange.xsd" xmlns:mstns="http://tempuri.org/balanceChange.xsd" xmlns="http://tempuri.org/balanceChange.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="balanceChange" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="balanceChange" msprop:Generator_UserDSName="balanceChange">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="balanceChange" msprop:Generator_TableClassName="balanceChangeDataTable" msprop:Generator_TableVarName="tablebalanceChange" msprop:Generator_TablePropName="_balanceChange" msprop:Generator_RowDeletingName="balanceChangeRowDeleting" msprop:Generator_RowChangingName="balanceChangeRowChanging" msprop:Generator_RowEvHandlerName="balanceChangeRowChangeEventHandler" msprop:Generator_RowDeletedName="balanceChangeRowDeleted" msprop:Generator_UserTableName="balanceChange" msprop:Generator_RowChangedName="balanceChangeRowChanged" msprop:Generator_RowEvArgName="balanceChangeRowChangeEvent" msprop:Generator_RowClassName="balanceChangeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

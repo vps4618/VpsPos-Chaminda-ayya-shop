@@ -1,0 +1,9 @@
+﻿todo for pdf
+-----------
+1.Daily transactions
+2.customer
+3. debt
+4. cashier form short cuts
+
+after adding vps pos new features - > 5. debt history
+									6. Item wise sale report

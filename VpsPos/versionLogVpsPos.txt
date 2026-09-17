@@ -1,0 +1,484 @@
+﻿2023/01/09
+------------
+1.App started running on pradeep traders.
+
+updates
+********
+# showing a message that receipt saved
+# showing dialogs like printing please wait,loading please wait while database connection
+# printing receipt when enter key pressed on customer name text box
+# loading only current day bills from descending order when initializing bill form
+# showing cost price when short cut key pressed
+# changing colour of selection
+# note write function added
+# shortcuts message box created
+# sqlString and phrase getting from a xml file functionality created
+
+2023/01/11
+---------------
+updates
+*********
+# Main user print receipt with sinhala font
+# Sub user print report with english font
+# In BillForm when refresh  button click it updates according to searchTextBox
+# All system with two users in same folder by classifying them in xml file
+
+2023/01/12
+----------------
+updates
+********
+# when saving and updating items in inventory they are trimmed.
+
+# No loading dialog when searching item from barcode
+
+# බිලක් බිල් ෆෝම් එකෙන් ගන්නකොට ඒක උප්ඩේට් කරල බිල් ෆෝම් එක වහන්නේ නැතුව/රිෆ්‍රෙෂ් කරන්නේ නැතුව අයේත් ඒ බිලම ගත්තොත් totalPrice උප්ඩේට් වෙන්නේ නැති නිසා (billGridView එකෙන් ගන්න නිසා) බිලේ ඔක්කොම විස්තර ඩේටාබේස් එකෙන් ගන්න හදනවා.
+
+# tooltips removed
+
+# drop downs converted to drop down lists
+
+# changing positions of bill price text box and sale price text box
+
+# cashier eke barcode eken badu danakota one ilakkam ganaka barcode ekakin baduva enna haduva (kalin thibbe barcodeText_textChanged function eka ayin karala BarcodeText_keyDown function eka damma mokada barcode reader eken item ekak scan karama enter key eka automa obana nisa)
+
+# same barcode grid view eke enter key eken baduva ganna haduva
+
+# isFromBarcode eka ayin kala (kalin Enter key eka handle kale nathi nisa quantity eka nathuva sale price eka edit karanna apu nisa solution ekak vidiyata dapu eka)
+,Dan barcodeText_keyDown eken ENTER key press eka handle karana nisa
+
+2023/01/14
+-----------
+updates
+*******
+# inventory search updated.(no loading screen when barcode search,search result in barcode comes after enter key pressed)
+
+# In billsgridview when searchTextBox.Text is "" datasource is null.
+
+# In billform search with button functionality added
+
+# In inventory form search with button functionality added.
+
+# shortcut form and updates form created.They used to display shortcut and updates text files.
+
+# focus removeItem button in cashier form with DELETE key shortcut deleted.
+
+# Link labels deleted and menu created for them (shortcuts,updates)
+
+# Nothing happen if enter key press on empty Barcode text box.
+
+# shortcuts for notes in cashier form by ctrl + S deleted and ctrl + N added
+
+2023/01/26
+----------
+updates
+********
+# debt and customers windows with functionality created
+
+2023/01/27
+----------
+updates
+********
+# stock update functionality added
+
+2023/02/02 - 1.0.0.2
+----------
+updates
+********
+# forms' layout changed to tablelayout for responsive layout.
+# All print receipts fully changed to dynamic.
+
+2023/02/03 - 1.0.0.3
+----------
+updates
+********
+# Item info history form and functionality created.
+
+2023/02/09 - 1.0.0.4
+------------
+updates
+********
+# Language for print receipts added
+# Daily transactions functionality added
+
+2023/02/12
+-----------
+updates
+*******
+# samebarcode gridview font size increased.
+# two colours for forms with two sections
+# daily added records will popup in debt and daily transactions.
+# date search in debt form fixed.
+# debt search results for transactions comes with customer name.
+# name duplication prevented when updating an item.
+# message box icon added in inventory form.
+# tab index bug fixed in all forms.
+# in cashier form , customer name tab added.
+
+2023/04/12
+-----------
+updates
+*********
+# Error of deleting stock info when delete button press eventhough reference error occured fixed.
+# both language in database and user type in required info considered when printing a bill.but priority goes to user type in required info.
+
+2023/04/14
+-----------
+updates
+**********
+# Both sale price and bill price will show in same barocde grid view.
+# Deleting items without getting reference errors can be done now.
+# In inventory form Save,Update,Delete fuctions are made with transactions.So when an exception occurs query will rollback.
+# In customers form queries that transactions wanted made with it.
+# Debt form functions with sql queries now equipped with transactions.
+
+2023/09
+--------
+updates
+********
+# rounding off total of bills to not to get decimal points.
+
+2023/10/15
+----------
+updates
+*********
+# adding print and view buttons to bills grid view
+
+2023/12/16
+-----------
+updates
+********
+# quick save by pressing F12 added in cashier form.
+
+2024/01/09
+------------
+updates
+********
+# when a bill saved or printed , total amount,received amount,change amount will display in cashier form rich box.
+# In cashier grid view , a user can't resize columns or rows.
+
+2024/01/27
+------------
+updates
+********
+# A condition added to check length of characters in charge text box is lower than 8 (to prevent auto printing when barcode scanned there).
+
+2024/01/29
+------------
+updates
+********
+# shortcuts changed - F12 - quick save
+					  F11 - quick save with print
+
+# new shortcut added to close window(Ctrl+Shift+X)	
+
+2024/02/02
+------------
+updates
+********
+# when a bill viewed in bill window, it will close.
+
+2024/04/13
+------------
+updates
+********
+# Message rich text box added with features.
+# when ctrl+M press in chashierform selected row's cost and bill price changed to prevent profit difference.(use for not updated items)
+
+2024/04/21
+------------
+updates
+********
+# Disable readonly mode shortcut added of messagerichtextbox.
+# Close already opened cashier form when click view button in bill form added.
+
+
+2024/07/15
+------------
+updates
+********
+# receipts and receipts items datatables cleared.
+# stopped feching itemname from database to itemcombotextbox by feching once to mainform dt set.
+
+2024/07/16
+------------
+updates
+********
+# WHEN ctrl+M pressed in cashier form cost price will be saleprice-salprice*0.1
+
+2024/10/07
+-------------
+updates
+********
+# w.s.r for different users created. (if this app bring for use in another computer, this setting should be changed - for developer) (real updates in REAL-UPDATES)
+
+2024/11/28
+-------------
+updates
+********
+# In cashier form, when refresh button pressed main form's itemname dtset will update.
+# when delete button pressed in inventory window, save button will enable
+
+2025/01/04		
+-------------
+updates
+********
+# To prevent "maximum print job done error", some code added to cashier and bill.(don't know whether they work or not)
+
+2025/01/06		
+-------------
+updates
+********
+# search functionality fixed in user form.(not showing users when searching in gridview)
+
+2025/01/07		
+-------------
+updates
+********
+# name buisness corrected to business
+
+2025/01/12
+---------------
+# another computer added for pradeep traders
+
+2025/01/13
+---------------
+# In cashier form, refresh button pressed firstlly itemComboBox will be cleared.
+
+2025/01/17
+---------------
+# Fixed the error came when refresh button(in cashier form) pressed in bill grid view bill.
+** remember that nullException will come like below example
+
+	DataSet dtset;
+	MessageBox.Show(dtset.Tables[0].Rows[0][0].ToString());
+
+to fix this we should initialize dtset like below
+
+	DataSet dtset;
+	dtset = new DataSet();
+	MessageBox.Show(dtset.Tables[0].Rows[0][0].ToString());
+
+2025/01/20
+------------
+# re check bill type when first item add to grid in cashier form
+# w-sale only for pradeep traders by storename(bill,sale-re)
+# update grid details when quantity typed and click another item other than grid view(not pressing Enter)
+# info form for when looking sale report
+
+2025/01/30	
+------------
+# cashier form bill type recheck for wholesale, message box color change done
+# cashier grid view row delete will happen with ctrl+shift+delete
+# when an item deleted, info history record will be added indicating item deleted.
+
+2025/02/24
+-----------
+todo
+
+# when . sign mistakenly entered and pressed enter in cashier grid view error handling will occur.
+
+2025/04/06
+-----------
+# mark functionality in cashier form updated with true mark printing and generate bill form receipts checked items in cashier form
+
+2025/07/15
+-----------
+# Functionality added to prevent invalid cost price adding.Because We today found that one item's cost set to 10 instead of 1045.That caused huge mistake in sale report. 
+
+2025/08/09
+-----------
+# In inventory form latest created update button logic caused error of unable to converting float to int.So ConvertToDouble used.
+# 1.bill form closing when view button pressed removed .
+  2.Creating new windows when after view button pressed and that bill opened and cashier strip pressed.Focusing alreadyin form fixed.Other forms also has focus when already opened exist
+# logic added to prevent user creating new instance of app while another already running.
+
+2025/08/12
+------------
+#	// Force kill the process immediately
+    Process.GetCurrentProcess().Kill();   added to destroy process immediatly to not exist in task manager anymore.
+# In cashier form when itemname like "pond's" typed in combox and pressed enter error occured since it has a single quote.Also that item added through barcode , when saving the bill , saving stops after that item since code breaks since it has a single quote.A logic to remove single quote when inserting with single quote added in inventory form.
+# Logout strip was maked as item in menu.
+
+2025/08/16
+--------------
+# in cashier form close button checking of sure added to close or not.also logout button in menu also added checking on close.In Main window close button , same thing was done.
+
+2025/08/22
+--------------
+# caching enabled to restore cashier grid view when sudden power cut happens.Two caching tables for two pcs (by categorizing through phrase A,B).Gridview will save automatically when bill in progress.to restore table press Ctrl+E in one computer.latest bill will come up for that pc.need to open window with correct last cashierFormId to restore successfully.
+# in cashier logic added to alert saleprice is hugely changed when cashier changing saleprice to add discount
+# in cashier alert added to unknownly entering '.' when adding quantities
+
+2025/08/23
+--------------
+# show note () - Ctrl + N (Barcode Text Box should has focus)
+hide note - Ctrl + Shift + N (Barcode Text Box should has focus) functionalities removed.(because this note now contain bill details , dissapearing it should be stopped) 
+# sinhala description for shortcuts added
+# added iteminfo,stock sql for when new shop need it cleanly
+
+2025/08/26 (uncertain update)
+-------------
+# in cahier to save receipt with transactions, insertbilldetailtodatabase function and database class updated with chatpgt code.(run the code and check it) (if error occuring when saving bills,delete new code and enable old code)
+
+(However, suprisingly, that chatgpt code made that function running so fastly.)
+
+# some logic added for shortcuts F11,F12 to work smoothly
+
+2025/10/01
+------------
+# 08/26 update somewhat sure now. so it will make run in pradeep traders.
+	Things that made chatgpt code faster -->
+		⚡ Why the new code is faster
+
+			One database connection instead of many
+
+				Old code (executeSqlCommand without transaction) → every query opened a new SqlConnection, executed, then closed.
+
+				New code → opens one connection and runs all inserts/updates inside it.
+				👉 Avoids repeated connection open/close, which is one of the slowest parts of database I/O.
+
+			Transaction batching
+
+				Old way → Each insert/update was autocommit (SQL Server commits each query separately).
+
+				New way → All inserts/updates are grouped into a single transaction.
+				👉 SQL Server only writes to disk once, instead of multiple times.
+
+			Prepared commands with parameters
+
+				Old way → Your code passed raw SQL strings → SQL Server had to re-parse and re-plan execution each time.
+
+				New way → Uses SqlCommand + parameters → SQL Server can reuse execution plans.
+				👉 Less parsing, less CPU overhead.
+
+			Less network chatter
+
+				Old way → Multiple round-trips between app ↔ database because each query opened/closed a connection.
+
+				New way → One round-trip with multiple queries inside a single session.
+				👉 Fewer packets, faster response.
+
+			📊 Quick analogy
+
+				Old code = Sending 10 separate letters to the post office, each time driving there, waiting in line, then going home.
+
+				New code = Packing all 10 letters in one envelope, driving to the post office once, and sending them all together.
+
+# logic added to stop showing unsual price change dialog in cashierform when retailCheckBox not checked(wholesale).
+# logic added in inventory management , 1.always cost should be less than wholesale,sale and bill
+										2.wholesale should be less than or equal sale and bill
+										3.sale should be less than or equal bill
+
+2025/10/06
+------------
+# fixed not printing bill, when bill requested while saving . that happened cause chatgpt code messed up with creating new variable called saleId instead of SaleId .
+
+2025/10/07
+-----------
+# fixed -->	// if id doesnt match ,check cached id not saved in receipts. if so restoring can be done.This situation can happen when a user entering new receipt items to grid(in pc 2) and suddenly power drops and after reopening app , suddenly he forgot to restore previous bill and enter another new bill and save it(in pc 1). then he need to restore pc 2 previous bill. but he can't cause no of receipt increased so previous id is less than new id.This need to be fixed.
+
+            // Here also there is an condition. restoring that bill only possible when user put new bill in pc 1 and try to restore previous bill(before powercut) from pc 2. If he put new bill after powercut in pc 2 , since cached bill in pc 2 changed to new bill, then he cant restore previous bill before powercut.
+            // This also applied to pc 1 vice versa.
+# sizing changed in updates form.
+
+# error logging started ( this was done with github copilot in github website )-->
+							
+							** That AI gave me super structured code . Learning from that code is time worthy. **
+
+							1. errorLogger class created.
+							2. added getCurrentData() in cashier for help getting current data
+							3. added log() function in every catch block in cashier
+
+# done not allowing letters enter in chargetextbox and print copies text box
+
+# limit set to maximum of 100 recent errors to be logged
+# stopped further execution of CheckOutButton_Click() when the transaction fails in InsertBillDetailToDatabase.
+# fixed --> If global logging (such as subscribing to
+If global logging (such as subscribing to AppDomain.UnhandledException or Application.ThreadException) is enabled in a .NET Windows Forms application, it can affect whether the default MessageBox from .NET appears after an unhandled exception
+# updating errorLog data done in cashier form.
+
+# some code added since cashier form crashes in other computers
+
+2025/10/09
+-----------
+# fixed updates form not showing in correct size in other computers.
+# The problem causing crash founded --> when app put in program files, since writing access doesnt have there, crashing occurs
+										So when writing logger, it will save in path,
+										C:\Users\<username>\AppData\Local\VPSPOS\Logs
+# no of errors should be logged will get from xml file
+# code file created to remeber what to change when logging errors.
+# bill form logging added.
+# businessForm logging added.
+# Firstly i need to update form data before executing a change function , cause updated data should be send if error occur in data changing function . So again bill form, cashier form logging steps changed.
+# customers form logging added
+
+2025/10/10
+-------------
+# Daily Transactions form logging added
+# Debt form logging added
+# Inventory form logging added
+# ItemInfoHistoryForm logging added
+
+2025/10/11
+---------------
+# Language Form logging added
+# login form logging added
+# Main form logging added
+# Sale report logging added
+# shortcuts form logging added
+# stock form logging added
+# updates form logging added
+# user form logging added
+
+2025/10/29
+---------------
+# alert added for items which not set wholesale price 
+
+2025/11/14
+----------
+# In barcodeTextBox when user mistakenly enter ' or " , then they will be ignored and message will show up.(This done cause they caused errors-sql injection like error)
+# when F3,F4 was pressed , then a message will appear saying that retail check box checked or not.
+# with shortcut ctrl+w ,now user can convert entire bill wholesale->retail or reatil->wholesale.
+
+2025/11/19
+----------
+# For pc 1 , font sizing,alignment,top changed for retailreceiptmain report(alignment - all, top - discount,total,fontsizing-discount,total,full total,given amount,change) , because there printing cause overflowing, so size should be reduce, for pc 1.because new x printer connected for it.
+
+ ********************                  Change this setting if neded.   ****************************
+
+ # sorting for each sinhala and english done.message box will appear for bills which have items greater than 15 and sorting will be done according to language they choose if they press yes
+
+ # for my convenience , whether need smalled receipt bill(for correctly print in x printer) (today first update), will get from requiredinfo file. If user insert 'yes' there , in pc with phrase 'B' , will print smalled receipts.
+
+   For both languages, this will work.
+
+
+2025/12/04
+-----------------
+# Darkmode added for cashierform
+# warning will popup closing cashier form  (pshychological barriers)
+# warning will popup when delete item from grid in specific conditions (,, ,,)
+# suspicous bill logging and viewing added 
+		
+	************ ( view only for pradeep )
+
+# login added for inventory (any existing account) 
+
+2025/12/05
+---------------
+# audit log ui updated.
+
+2025/12/07
+-------------
+# warning added when in cashier grid -> cost price > sale price
+# warning added when in cashier grid -> bill price < sale price
+# audit ui again updated.
+
+2025/12/13
+-------------
+# Debt management functionality improved.
+# Audit form error logging added.
+
+2026/06/25
+------------
+# started working on new functionalities in analytics 
