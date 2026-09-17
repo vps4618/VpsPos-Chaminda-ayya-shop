@@ -56,7 +56,6 @@
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TimeTimer = new System.Windows.Forms.Timer(this.components);
-            this.analyticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -218,8 +217,7 @@
             // 
             this.toolStripMenuItem1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.analyticsToolStripMenuItem});
+            this.toolStripMenuItem2});
             this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -304,13 +302,6 @@
             this.TimeTimer.Interval = 1000;
             this.TimeTimer.Tick += new System.EventHandler(this.TimeTimer_Tick);
             // 
-            // analyticsToolStripMenuItem
-            // 
-            this.analyticsToolStripMenuItem.Name = "analyticsToolStripMenuItem";
-            this.analyticsToolStripMenuItem.Size = new System.Drawing.Size(435, 56);
-            this.analyticsToolStripMenuItem.Text = "Analytics";
-            this.analyticsToolStripMenuItem.Click += new System.EventHandler(this.analyticsToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -362,6 +353,5 @@
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dailyTransactionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem analyticsToolStripMenuItem;
     }
 }

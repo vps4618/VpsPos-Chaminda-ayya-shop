@@ -704,32 +704,6 @@ ORDER BY DateCreated DESC";
             }
         }
 
-        AnalyticsDashboardForm analyticsForm;
-        private void analyticsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Log that we are opening the form
-            ErrorLogger.UpdateFormData("MainForm", GetCurrentFormData());
-
-            // Check if it's aleardy open to prevent opening duplicates
-            if (analyticsForm == null)
-            {
-                analyticsForm = new AnalyticsDashboardForm();
-                analyticsForm.MdiParent = this; // This makes analytics form is a child of main form
-                analyticsForm.FormClosed += AnalyticsForm_FormClosed;
-                analyticsForm.Show();
-
-                analyticsForm.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                analyticsForm.Activate();
-                analyticsForm.WindowState = FormWindowState.Maximized;
-            }
-        }
-
-        private void AnalyticsForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            analyticsForm = null;
-        }
+        
     }
 }

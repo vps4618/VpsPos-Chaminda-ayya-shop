@@ -246,12 +246,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnalyticsDashboardForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AnalyticsDashboardForm.Designer.cs">
-      <DependentUpon>AnalyticsDashboardForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="AuditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -455,9 +449,6 @@
     <Compile Include="UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AnalyticsDashboardForm.resx">
-      <DependentUpon>AnalyticsDashboardForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AuditForm.resx">
       <DependentUpon>AuditForm.cs</DependentUpon>
     </EmbeddedResource>

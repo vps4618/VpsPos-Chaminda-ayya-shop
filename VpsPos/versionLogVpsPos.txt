@@ -482,3 +482,7 @@ If global logging (such as subscribing to AppDomain.UnhandledException or Applic
 2026/06/25
 ------------
 # started working on new functionalities in analytics 
+
+2026/09/17
+-----------
+# removed analytics because it not finished . and started working on features ayya told.
