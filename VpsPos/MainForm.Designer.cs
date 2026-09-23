@@ -56,6 +56,7 @@
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TimeTimer = new System.Windows.Forms.Timer(this.components);
+            this.installmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,7 +98,8 @@
             this.dailyTransactionsToolStripMenuItem,
             this.debtMenuToolStripMenuItem,
             this.userToolStripMenuItem,
-            this.buisnessInfoToolStripMenuItem});
+            this.buisnessInfoToolStripMenuItem,
+            this.installmentsToolStripMenuItem});
             this.dataToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("dataToolStripMenuItem.Image")));
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
@@ -292,7 +294,7 @@
             this.logoutToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.logoutToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(106, 52);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(105, 52);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -301,6 +303,13 @@
             this.TimeTimer.Enabled = true;
             this.TimeTimer.Interval = 1000;
             this.TimeTimer.Tick += new System.EventHandler(this.TimeTimer_Tick);
+            // 
+            // installmentsToolStripMenuItem
+            // 
+            this.installmentsToolStripMenuItem.Name = "installmentsToolStripMenuItem";
+            this.installmentsToolStripMenuItem.Size = new System.Drawing.Size(412, 56);
+            this.installmentsToolStripMenuItem.Text = "Installments";
+            this.installmentsToolStripMenuItem.Click += new System.EventHandler(this.installmentsToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -353,5 +362,6 @@
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dailyTransactionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem installmentsToolStripMenuItem;
     }
 }

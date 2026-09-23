@@ -435,6 +435,40 @@ BEGIN
     )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
     ) ON [PRIMARY];
 END
+
+-- වාරික සැලැස්මේ ප්‍රධාන විස්තර සේව් කිරීමට
+IF OBJECT_ID('dbo.vpsPosInstallments', 'U') IS NULL
+begin
+CREATE TABLE vpsPosInstallments (
+    InstallmentId INT IDENTITY(1,1) PRIMARY KEY,
+    CustomerId INT NOT NULL, -- (Customer කෙනෙක් අනිවාර්යයි)
+    ReceiptId INT NULL, -- (අදාල බිල් අංකය)
+    TotalAmount FLOAT NOT NULL,
+    DownPayment FLOAT NOT NULL,
+    CreditAmount FLOAT NOT NULL,
+    InterestRate FLOAT NOT NULL,
+    NoOfMonths INT NOT NULL,
+    DateCreated DATETIME NOT NULL,
+    FOREIGN KEY (CustomerId) REFERENCES vpsPosCustomers(id)
+);
+end
+
+-- මාසෙන් මාසෙට හැදෙන වාරික සටහන සේව් කිරීමට
+IF OBJECT_ID('dbo.vpsPosInstallmentSchedule', 'U') IS NULL
+begin
+CREATE TABLE vpsPosInstallmentSchedule (
+    ScheduleId INT IDENTITY(1,1) PRIMARY KEY,
+    InstallmentId INT NOT NULL,
+    MonthNo INT NOT NULL,
+    RemainingCapital FLOAT NOT NULL,
+    PrincipalPayment FLOAT NOT NULL,
+    InterestPayment FLOAT NOT NULL,
+    TotalInstallment FLOAT NOT NULL,
+    DueDate DATETIME NOT NULL,
+    IsPaid BIT DEFAULT 0, -- (ගෙව්වද නැද්ද යන්න)
+    FOREIGN KEY (InstallmentId) REFERENCES vpsPosInstallments(InstallmentId)
+);
+end
 ";
                     using (SqlCommand command = new SqlCommand(queryString, connection))
                     {

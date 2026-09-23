@@ -1,0 +1,5 @@
+﻿1. sql code tika adala than valata damima.
+1.1. proper error logging with all info
+2. confirm message to save installement info in schedule when user only need to see how installemt change,saving not required
+2.1. testing
+3. ui design

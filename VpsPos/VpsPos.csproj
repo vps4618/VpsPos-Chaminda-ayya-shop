@@ -371,6 +371,12 @@
     <Compile Include="InfoPdfForm.Designer.cs">
       <DependentUpon>InfoPdfForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="InstallmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstallmentForm.Designer.cs">
+      <DependentUpon>InstallmentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -504,6 +510,9 @@
     <EmbeddedResource Include="InfoPdfForm.resx">
       <DependentUpon>InfoPdfForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InstallmentForm.resx">
+      <DependentUpon>InstallmentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InventoryForm.resx">
       <DependentUpon>InventoryForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -607,6 +616,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ayya mulin feature gana kiyapu deval.txt" />
     <Content Include="icudt.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -631,6 +641,7 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="todo-installment-feature.txt" />
     <Content Include="toDo.txt" />
     <Content Include="v.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

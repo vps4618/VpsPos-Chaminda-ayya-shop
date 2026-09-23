@@ -704,6 +704,27 @@ ORDER BY DateCreated DESC";
             }
         }
 
-        
+        InstallmentForm installmentForm;
+        private void installmentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ErrorLogger.UpdateFormData("MainForm", GetCurrentFormData());
+            if (installmentForm == null)
+            {
+                installmentForm = new InstallmentForm();
+                installmentForm.MdiParent = this;
+                installmentForm.FormClosed += InstallmentForm_FormClosed; ;
+                installmentForm.Show();
+            }
+            else
+            {
+                installmentForm.Activate();
+            }
+        }
+
+        private void InstallmentForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ErrorLogger.UpdateFormData("MainForm", GetCurrentFormData());
+            installmentForm = null;
+        }
     }
 }
